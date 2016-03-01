@@ -10,6 +10,7 @@ gem 'rake'
 gem 'simplecov'
 gem 'simplecov-rcov'
 gem 'ci_reporter'
+# comment 4
 # additional ttest to see if change triggers build
 # comment to test if change fires build
 # gem to connect to saucelabs and also dynamically change browser parameters
