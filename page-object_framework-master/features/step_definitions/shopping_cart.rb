@@ -1,5 +1,6 @@
 When(/^I open automationpractice website$/) do
   visit AutomationHomePage
+  # comment to test build is kicked off after change
 end
 
 And(/^I login using data from yml$/) do
