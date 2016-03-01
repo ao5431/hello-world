@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/summer_dresses_catalog_page.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Page-object framework-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/summer_dresses_catalog_page.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-summer_dresses_catalog_page_rb.html">lib/pages/summer_dresses_catalog_page.rb</a></td>
+            <td class='right_align'><tt>25</tt></td>
+            <td class='right_align'><tt>12</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class SummerDressesCatalogPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   element(:category_name) { |b| b.element(class: &#39;cat-name&#39;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:size_short) {|b| b.checkbox(id: &quot;layered_id_attribute_group_1&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:size_medium) {|b| b.checkbox(id: &quot;layered_id_attribute_group_2&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   element(:color_white) {|b| b.checkbox(id: &quot;layered_id_attribute_group_8&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line10">10</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   class PrintedSummerDress1 &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>     element(:img_dress1) {|b| b.element(xpath: &quot;//*[@id=&#39;center_column&#39;]/ul/li[1]/div/div[1]/div/a[1]/img&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>     element(:add_cart_dress1) {|b| b.element(xpath: &quot;//*[@id=&#39;center_column&#39;]/ul/li[1]/div/div[2]/div[2]/a[1]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>     element(:product_price) {|b| b.element(class: &quot;product-price&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line16">16</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   class CartPopup &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>     element(:continue_shopping) {|b| b.element(title: &quot;Continue shopping&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>     element(:proceed_to_checkout) {|b| b.element(title:&quot;Proceed to checkout&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line23">23</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line26">26</a> </pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-03-01 11:45:08 -0500 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>
