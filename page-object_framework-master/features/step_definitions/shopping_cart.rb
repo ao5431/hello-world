@@ -5,6 +5,7 @@ end
 
 And(/^I login using data from yml$/) do
   on(AutomationHomePage).sign_in.when_present(10).click
+  #comment
   on(LoginPage).login_yml
 end
 
